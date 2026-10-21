@@ -32,27 +32,26 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.timer_outlined),
-          selectedIcon: const Icon(Icons.timer, color: AppTheme.primaryColor),
-          label: 'Counter',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.emoji_events_outlined),
-          selectedIcon: const Icon(Icons.emoji_events, color: AppTheme.primaryColor),
-          label: 'Milestones',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.savings_outlined),
-          selectedIcon: const Icon(Icons.savings, color: AppTheme.primaryColor),
-          label: 'Savings',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.handshake_outlined),
-          selectedIcon: const Icon(Icons.handshake, color: AppTheme.primaryColor),
-          label: 'Pledge',
-        ),
-
+          NavigationDestination(
+            icon: const Icon(Icons.dashboard_outlined),
+            selectedIcon: const Icon(Icons.dashboard, color: AppTheme.primaryColor),
+            label: 'Milestone',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.list_alt_outlined),
+            selectedIcon: const Icon(Icons.list_alt, color: AppTheme.primaryColor),
+            label: 'Savings',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.analytics_outlined),
+            selectedIcon: const Icon(Icons.analytics, color: AppTheme.primaryColor),
+            label: 'Health',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.settings_outlined),
+            selectedIcon: const Icon(Icons.settings, color: AppTheme.primaryColor),
+            label: 'SOS Urge',
+          ),
         ],
       ),
     );
